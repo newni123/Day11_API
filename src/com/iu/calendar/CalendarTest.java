@@ -4,8 +4,9 @@ import java.util.Calendar;
 
 public class CalendarTest {
 	public static void main(String[] args) {
-		Calendar cal = Calendar.getInstance(); // new GregorianCalendar
 		// 현재 시간의 정보
+		Calendar cal = Calendar.getInstance(); // new GregorianCalendar
+		
 		int hour = cal.get(Calendar.HOUR); // 12시간 기준
 		hour = cal.get(Calendar.HOUR_OF_DAY); // 24시간 기준
 		int min = cal.get(Calendar.MINUTE);
@@ -19,6 +20,6 @@ public class CalendarTest {
 		System.out.print(date + "일 ");
 		System.out.print(hour + "시 ");
 		System.out.print(min + "분 ");
-		System.out.println("\n이번주의 "+ d +"번째 날" );
+		System.out.println("\n이번주의 " + d + "번째 날");
 	}
 }

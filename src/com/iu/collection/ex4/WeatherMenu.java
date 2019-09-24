@@ -14,9 +14,11 @@ public class WeatherMenu {
 	// 5. 프로그램 종료
 	private WeatherService weatherService;
 	private WeatherView weatherView;
+	private HashMap<String,Weather> map;
 
 
 	public WeatherMenu() {
+		map = new HashMap<String, Weather>();
 		weatherService = new WeatherService();
 		weatherView = new WeatherView();
 		HashMap<String,Weather> map = new HashMap<String, Weather>();
@@ -41,7 +43,7 @@ public class WeatherMenu {
 			switch (select) {
 			case 1:
 				System.out.println();
-				HashMap<String,Weather> map = weatherService.init();
+				map = weatherService.init();
 				System.out.println();
 			case 2:
 				System.out.println();
